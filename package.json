@@ -1,0 +1,18 @@
+{
+  "name": "omni-library-customisations",
+  "version": "1.0.0",
+  "description": "Customisations for the Omni Newsroom",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.schibsted.io/omni/library-omni-customisations.git"
+  },
+  "author": "Omni",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.schibsted.io/omni/library-omni-customisations/issues"
+  },
+  "homepage": "https://github.schibsted.io/omni/library-omni-customisations#readme"
+}

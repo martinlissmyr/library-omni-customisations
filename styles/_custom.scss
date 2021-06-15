@@ -1,0 +1,93 @@
+#main-search-page .main-item .branding .branding-label {
+  font-weight: bold;
+}
+
+.search-container {
+  .twitter-typeahead {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 30px;
+  }
+  .icon {
+    color: $gray-45;
+    background: transparent !important;
+  }
+} 
+
+.button {
+  border-radius: 20px;
+  background: $omni-primary;
+  &.btn-homepage,
+  &.btn-footer {
+    background: $omni-primary;
+    color: $white !important;
+    border-color: $omni-primary;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+
+    &:hover {
+      background: $omni-primary-dark;
+      text-decoration: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+
+  }
+
+  &.btn-footer {
+    background: transparent;
+    color: $omni-primary !important;
+    border-color: $omni-primary;
+
+    &:hover {
+      background: $omni-primary;
+      color: $white !important;
+    }
+  }
+}
+
+.g-body .g-main-content {
+  border-width: 1px;
+}
+
+.masthead .container {
+  .branding .branding-label {
+    a:visited,
+    a:link {
+      color: #fff;
+    }
+  }
+  .breadcrumb {
+    .breadcrumb-item {
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.search-container .tt-menu {
+  width: 90%;
+  margin: 0 5%;
+}
+
+#user-profile {
+  a.btn-user-whole {
+    &:hover, &:active, &:target {
+      text-decoration: none;
+      background: transparent;
+    }
+  }
+}
+
+.g-body {
+  .g-main-content {
+     p,  ul, li, dt, dd {
+      font-family: $font-serif;
+    }
+  }
+}
