@@ -1,5 +1,20 @@
-#main-search-page .main-item .branding .branding-label {
-  font-weight: bold;
+#main-search-page {
+  .main-item {
+    .branding {
+      .branding-label {
+        font-weight: bold;
+      }
+    }
+    .tagline {
+      a {
+        display: none;
+      }
+    }
+  }
+}
+
+p:empty {
+  display: none;
 }
 
 .search-container {
@@ -49,9 +64,110 @@
   }
 }
 
-.g-body .g-main-content {
-  border-width: 1px;
+.g-body {
+  .g-left-panel {
+    .section-kicker {
+      font-family: $font-headline;
+      text-transform: uppercase;
+    }
+
+    ul.section,
+    ul.sibling {
+
+      li {
+        border: 0;
+        padding: 0;
+        text-indent: 0;
+
+        a,
+        strong {
+          font-family: $font-sans-medium;
+          padding: 0;
+        }
+      }
+    }
+
+    ul.subsection {
+      margin-bottom: 20px;
+
+      li {
+        margin-left: 0;
+
+        &:before {
+          display: none;
+        }
+
+        a,
+        strong {
+          font-family: $font-sans;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .g-main-content,
+  .playlist-navigation {
+    border-width: 1px;
+
+    h1 {
+      font-family: $font-headline;
+    }
+
+    h1 + h2 {
+      margin-top: 25px;
+    }
+
+    h2 {
+      font-style: italic;
+    }
+
+    p,  ul, li, dt, dd {
+      font-family: $font-serif;
+    }
+
+    p {
+      [style*="font-weight:700"] {
+        font-family: $font-sans-medium;
+      }
+    }
+
+    p + h1 {
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
+    }
+
+    pre {
+      font-size: 15px;
+      background: lighten($omni-eko-beige, 5);
+
+      &:before {
+        background: $omni-eko-beige;
+        color: darken($omni-eko-beige-dark, 20);
+        height: 30px;
+        line-height: 30px;
+      }
+
+      .line-number::before {
+        color: darken($omni-eko-beige-dark, 20);
+      }
+    }
+
+    .children-container {
+      box-shadow: 0 0 5px 0 #dfdfdf;
+      -webkit-box-shadow: 0 0 5px 0 #dfdfdf;
+
+      h3 {
+        font-family: $font-headline;
+      }
+
+      li, a {
+        font-family: $font-sans;
+      }
+    }
+  }
 }
+
 
 .masthead .container {
   .branding .branding-label {
@@ -82,12 +198,14 @@
       background: transparent;
     }
   }
-}
-
-.g-body {
-  .g-main-content {
-     p,  ul, li, dt, dd {
-      font-family: $font-serif;
-    }
+  button.btn-user-initial {
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    line-height: 1px;
+    border: 0;
+  }
+  a.btn-user-whole:link, 
+  a.btn-user-whole:visited {
+    color: rgba(255, 255, 255, .7);
   }
 }
