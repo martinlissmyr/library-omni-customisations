@@ -49,7 +49,7 @@ folder:
     kicker: !!js/function (title) => `Pages in ${title}`
   # partials/sectionList
   sectionList:
-    heading: "Table of Contents:"
+    heading: "Table of Contents"
   #partials/siblingList
   siblingList:
     heading: Related Docs

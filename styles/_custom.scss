@@ -75,6 +75,7 @@ p:empty {
     ul.sibling {
 
       li {
+        margin: 0 0 5px 0;
         border: 0;
         padding: 0;
         text-indent: 0;
@@ -88,13 +89,12 @@ p:empty {
     }
 
     ul.subsection {
-      margin-bottom: 20px;
 
       li {
-        margin-left: 0;
+        margin: 0 0 0 13px;
 
         &:before {
-          display: none;
+          margin: 0 0 0 -13px;
         }
 
         a,
@@ -114,12 +114,30 @@ p:empty {
       font-family: $font-headline;
     }
 
-    h1 + h2 {
-      margin-top: 25px;
+    h2 {
+      margin-top: 1.7rem;
+      font-size: 1.65rem;
+      font-family: $font-sans-medium;
     }
 
-    h2 {
+    h3 {
+      margin: 1.7rem 0 0.5em 0;
+      color: #444;
+      [style*="font-weight:700"] {
+        font-family: $font-sans-medium;
+      }
+    }
+
+    h4 {
+      margin: 1.7rem 0 0.5em 0;
+      color: #666;
+      font-size: 1.125rem;
       font-style: italic;
+    }
+
+    p + h1 {
+      padding-top: 30px;
+      border-top: 1px solid #ddd;
     }
 
     p,  ul, li, dt, dd {
@@ -127,14 +145,12 @@ p:empty {
     }
 
     p {
-      [style*="font-weight:700"] {
-        font-family: $font-sans-medium;
-      }
-    }
+      margin: 0 0 1.125rem 0;
 
-    p + h1 {
-      padding-top: 30px;
-      border-top: 1px solid #ddd;
+      [style*="font-weight:700"] {
+        font-weight: normal;
+        background: $omni-eko-beige;
+      }
     }
 
     pre {
